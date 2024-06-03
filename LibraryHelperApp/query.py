@@ -1,13 +1,11 @@
 import psycopg2 # type: ignore
 from enum_query_files import QueryFiles
 
-
 class Query:
 
     '''
     Класс Запрос
     '''
-    
     def __init__(self, connection: psycopg2.connect):
         '''
         Конструктор для класса Запрос
