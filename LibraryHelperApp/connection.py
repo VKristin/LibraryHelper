@@ -2,25 +2,24 @@ import psycopg2 # type: ignore
 from dotenv import load_dotenv # type: ignore
 import os
 
-'''
-Класс для подключения к БД
-'''
 class Connection:
-
     '''
-    Конструктор для класса Connection
+    Класс для подключения к БД
     '''
     def __init__(self):
+        '''
+        Конструктор для класса Connection
+        '''
         load_dotenv()
         self.dbname = os.getenv("DBNAME")
         self.user = os.getenv("USER")
         self.password = os.getenv("PASSWORD")
         self.host = os.getenv("HOST")
 
-    '''
-    Метод для подключения к БД
-    '''
     def DbConnection(self):
+        '''
+        Метод для подключения к БД
+        '''
         try:
             # пытаемся подключиться к базе данных
             return psycopg2.connect(dbname=self.dbname, user=self.user, password=self.password, host=self.host)

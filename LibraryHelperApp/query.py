@@ -11,6 +11,8 @@ class Query:
     def __init__(self, connection: psycopg2.connect):
         '''
         Конструктор для класса Запрос
+
+        connection -- подключение к БД
         '''
         self.connection = connection
         self.file_path = "queries//"
