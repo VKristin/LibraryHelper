@@ -39,4 +39,4 @@ def get_report():
             case '5': print(f'Дата последнего посещения библиотеки читателями\n{query_obj.get_readers_last_visit()}')
             case '6': print(f'Самый читаемый автор\n{query_obj.get_most_popular_author()}')
             case '7': print(f'Самые предпочитаемые читателями жанры (по убыванию)\n{query_obj.get_most_popular_genres()}')
-            #case '8': print(f'Любимый жанр каждого читателя\n{query_obj.get_readers_actual_books()}')
+            case '8': print(f'Любимый жанр каждого читателя\n{query_obj.get_most_popular_user_genres()}')
