@@ -9,7 +9,7 @@ WITH MostPopularAuthor AS(
         books USING(book_id)
     JOIN 
         authors USING(author_id)
-    GROUP BY genre_name
+    GROUP BY author_name
     ORDER BY Количество DESC)
 
 SELECT authors_name
