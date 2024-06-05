@@ -11,3 +11,4 @@ class QueryFiles(enum.Enum):
     readers_last_visit = "get_readers_last_visit.sql"
     most_popular_genres = "get_most_popular_genres.sql"
     most_popular_author = "get_most_popular_author.sql"
+    most_popular_user_genres = "get_most_popular_user_genres.sql"

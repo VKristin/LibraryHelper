@@ -73,3 +73,9 @@ class Query:
         Список последних посещений читателями
         '''
         return self.send_query(QueryFiles.readers_last_visit.value)
+    
+    def get_most_popular_user_genres(self):
+        '''
+        Список пользователей и их любимых жанров
+        '''
+        return self.send_query(QueryFiles.most_popular_user_genres.value)

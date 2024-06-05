@@ -11,3 +11,4 @@ JOIN
 GROUP BY
     readers.reader_id,
     reader_name
+ORDER BY readers.reader_id
