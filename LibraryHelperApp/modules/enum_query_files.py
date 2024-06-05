@@ -10,4 +10,4 @@ class QueryFiles(enum.Enum):
     readers_num_of_books = "get_readers_num_of_books.sql"
     readers_last_visit = "get_readers_last_visit.sql"
     most_popular_genres = "get_most_popular_genres.sql"
-    most_popular_author = "get_most_popular_author"
+    most_popular_author = "get_most_popular_author.sql"
