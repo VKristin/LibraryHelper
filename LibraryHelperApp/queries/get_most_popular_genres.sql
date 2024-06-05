@@ -7,10 +7,10 @@ WITH GenresPopular AS(
         readers_records
     JOIN 
         books USING(book_id)
-    JOIN 
+    RIGHT JOIN 
         genres USING(genre_id)
     GROUP BY genre_name
-    ORDER BY Количество)
+    ORDER BY Количество DESC)
 
 SELECT genre_name
 FROM GenresPopular
