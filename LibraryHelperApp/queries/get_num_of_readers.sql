@@ -1,4 +1,3 @@
 -- Получить количество читателей
-SELECT COUNT(reader_id)
+SELECT COUNT(reader_id) as num_of_users
 FROM readers
-GROUP BY reader_id

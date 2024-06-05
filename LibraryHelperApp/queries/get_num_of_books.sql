@@ -1,4 +1,3 @@
 -- Получить количество книг
-SELECT COUNT(book_id)
+SELECT COUNT(book_id) as num_of_books
 FROM books
-GROUP BY book_id
