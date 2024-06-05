@@ -1,7 +1,7 @@
 -- Самый читаемый автор
 WITH MostPopularAuthor AS(
     SELECT 
-        authors_name,
+        author_name,
         COUNT(record_id) AS Количество
     FROM 
         readers_records
