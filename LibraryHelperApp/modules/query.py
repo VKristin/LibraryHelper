@@ -55,3 +55,21 @@ class Query:
         Запрос на количество книг, которые находятся на руках у каждого читателя
         '''
         return self.send_query(QueryFiles.readers_actual_books.value)
+    
+    def get_most_popular_author(self):
+        '''
+        Самый популярный автор
+        '''
+        return self.send_query(QueryFiles.most_popular_author.value)
+    
+    def get_most_popular_genres(self):
+        '''
+        Самые популярные жанры (по убыванию)
+        '''
+        return self.send_query(QueryFiles.most_popular_genres.value)
+    
+    def get_readers_last_visit(self):
+        '''
+        Список последних посещений читателями
+        '''
+        return self.send_query(QueryFiles.readers_last_visit.value)
