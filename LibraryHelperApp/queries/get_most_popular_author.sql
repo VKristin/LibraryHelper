@@ -12,6 +12,6 @@ WITH MostPopularAuthor AS(
     GROUP BY author_name
     ORDER BY Количество DESC)
 
-SELECT authors_name
+SELECT author_name
 FROM MostPopularAuthor
 LIMIT 1
